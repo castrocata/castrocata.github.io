@@ -1,0 +1,131 @@
+/* General styles */
+body, p, h2, h3, li, a {
+    color: #212121; /* Color de texto gris más oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif moderna */
+    line-height: 1.7; /* Mejor legibilidad */
+    background-color: #eaeaea; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    padding-top: 40px; /* Espacio en la parte superior */
+}
+
+/* Content container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-radius: 15px; /* Bordes más redondeados */
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Title */
+h2 {
+    font-size: 2.8rem; /* Tamaño mayor para títulos */
+    font-weight: bold;
+    color: #37474f; /* Gris más oscuro para el título */
+    margin-bottom: 25px;
+    text-transform: uppercase; /* Títulos en mayúsculas */
+}
+
+/* Gallery of images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Style for the images */
+.gallery img {
+    width: 100%;
+    height: auto; 
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes suaves */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+/* Hover effect on images */
+.gallery img:hover {
+    transform: scale(1.1); /* Efecto de zoom más ligero */
+    filter: brightness(0.95); /* Oscurecimiento ligeramente al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Efecto de sombra más intenso */
+}
+
+/* Video container */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+/* Styling for embedded videos */
+.video-container iframe {
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 850px;
+    height: 500px; /* Mejor resolución para videos */
+}
+
+/* Footer/social media links */
+.social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s; /* Transición suave para iconos */
+}
+
+/* Hover effect for social media icons */
+.social img:hover {
+    transform: scale(1.15); /* Efecto de zoom en iconos */
+}
+
+/* Modal for cookie consent */
+.modal-content {
+    background-color: #fff;
+    color: #212121;
+    border-radius: 12px; /* Bordes más suaves */
+    padding: 25px; /* Espaciado interno */
+}
+
+/* Link styles in modal */
+.modal-body p a {
+    color: #007bff; /* Color azul para enlaces */
+    text-decoration: underline; /* Subrayar enlaces */
+}
+
+/* New styles for video emphasis */
+.video-container h3 {
+    font-size: 2rem; /* Tamaño mayor para subtítulos de video */
+    color: #424242; /* Color gris más oscuro */
+    margin-bottom: 15px; /* Espacio inferior */
+    text-align: center; /* Centrar subtítulos */
+}
+
+.video-container p {
+    font-size: 1.1rem; /* Tamaño de fuente mejorado para descripciones */
+    color: #757575; /* Color gris más claro para descripciones */
+    text-align: center; /* Centrar texto */
+    max-width: 640px; /* Ancho máximo para descripciones */
+    margin: 0 auto; /* Centrar el párrafo */
+}
